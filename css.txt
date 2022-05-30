@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .vision-intro {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .vision-intro p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+  .vision-intro img {
+    margin: 0 -30px;
+    width: -webkit-fill-available;
+  }
+  .vision-content {
+    padding: 0;
+    flex-direction: column;
+  }
+  .vision-content .left-content {
+    display: flex;
+    overflow: hidden;
+  }
+  .vision-content .right-content {
+    width: 100%;
+  }
+}

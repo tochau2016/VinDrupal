@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+.vision {
+  margin: 0 30px;
+}
+.vision-intro {
+  padding: 0 154px;
+  margin-bottom: -245px;
+}
+.vision-intro p {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 153.5px;
+}
+.vision-intro img {
+  width: 100%;
+}
+.vision-content {
+  display: flex;
+  z-index: -1;
+  justify-content: space-between;
+  background-color: #F7F9F9;
+  padding: 293px 154px 81.5px;
+}
+.vision-content .left-content {
+  width: 50%;
+}
+.vision-content .right-content {
+  width: 30%;
+  padding: 30px;
+  background-color: #FFFFFF;
+  display: grid;
+  row-gap: 36px;
+}
+.vision-content h3 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  margin: 0;
+}
+.vision-content p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+.right-content-item span {
+  font-family: 'Mulish', sans-serif;
+  margin-left: 24px;
+}
+.vision-content .right-content-item {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .vision-intro {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .vision-intro p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+  .vision-intro img {
+    margin: 0 -30px;
+    width: -webkit-fill-available;
+  }
+  .vision-content {
+    padding: 0;
+    flex-direction: column;
+  }
+  .vision-content .left-content {
+    display: flex;
+    width: 100%;
+  }
+  .vision-content .right-content {
+    width: initial;
+  }
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .slides {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  .slide-item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 85%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform .5s;
+    position: relative;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+.banner {
+  background-image: url('../img/banner-hero1.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-content {
+    width: fit-content;
+    padding: 47.32px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin-bottom: 16.83px;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30.12px;
+      color: #3c3c3c;
+      margin: 0 0 8px 0;
+    }
+    .price {
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 64px;
+    }
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1464F4;
+      font-family: 'Mulish', sans-serif;
+      font-size: 12px;
+      line-height: 20.08px;
+      color: #FFFFFF;
+      padding: 10px 68px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
