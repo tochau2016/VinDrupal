@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+}
+
+.aboutSwiper {
+  width: 100%;
+  height: 100vh;
+}
+.aboutSwiper .desktop-img {
+  width: 100%;
+  height: 100vh;
+}
+.aboutSwiper .banner-content {
+  top: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.aboutSwiper .banner-content svg {
+  cursor: pointer;
+}
+.aboutSwiper .banner-content p {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.aboutSwiper .intro {
+  padding: 0 188px;
+}
+.aboutSwiper .intro img {
+  width: 100%;
+}
+.aboutSwiper .intro p {
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35.14px;
+  text-align: center;
+  color: #3c3c3c;
+}
+.aboutSwiper .vision {
+  position: relative;
+}
+.aboutSwiper .vision img {
+  width: 100%;
+  height: 100vh;
+}
+.aboutSwiper .vision .vision-content {
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.aboutSwiper .vision .vision-content .overlay-section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+.aboutSwiper .vision .vision-content-item {
+  width: 442.5px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.aboutSwiper .vision .vision-content-item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.aboutSwiper .vision .vision-content-item:nth-child(2) {
+  grid-column: 2/2;
+  grid-row: 2;
+  margin-top: 30px;
+}
+.aboutSwiper .vision .vision-content-item:nth-child(3) {
+  margin-top: -30px;
+}
+.aboutSwiper .foot-print .imagesSwiper .swiper-slide {
+  width: 80%;
+}
+.aboutSwiper .foot-print .imagesSwiper .swiper-slide img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

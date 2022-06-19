@@ -4,8 +4,6 @@ html, body {
 }
 
 .background {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,12 +15,9 @@ html, body {
   height: 130vh;
   position: fixed;
   width: 100%;
-  -webkit-transform: translateY(30vh);
-          transform: translateY(30vh);
-  -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+  transform: translateY(30vh);
   transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
 }
-
 .background:before {
   content: "";
   position: absolute;
@@ -34,22 +29,16 @@ html, body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 .background:first-child {
   background-image: url(https://github.com/NOSDOOM/picturehost/raw/master/xZMOBTj.jpg);
-  -webkit-transform: translateY(-15vh);
-          transform: translateY(-15vh);
+  transform: translateY(-15vh);
 }
-
 .background:first-child .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
+  transform: translateY(15vh);
 }
-
 .background:nth-child(2) {
   background-image: url("https://github.com/NOSDOOM/picturehost/raw/master/4Aihmii.jpg");
 }
-
 .background:nth-child(3) {
   background-image: url("https://i.redd.it/4vqygabli4mx.jpg");
 }
@@ -69,71 +58,46 @@ html, body {
 
 .content-wrapper {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
   color: #fff;
   font-family: Montserrat;
   text-transform: uppercase;
-  -webkit-transform: translateY(40vh);
-          transform: translateY(40vh);
+  transform: translateY(40vh);
   will-change: transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
-
 .content-title {
   font-size: 12vh;
   line-height: 1.4;
 }
 
 .background.up-scroll {
-  -webkit-transform: translate3d(0, -15vh, 0);
-          transform: translate3d(0, -15vh, 0);
+  transform: translate3d(0, -15vh, 0);
 }
-
 .background.up-scroll .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
+  transform: translateY(15vh);
 }
-
 .background.up-scroll + .background {
-  -webkit-transform: translate3d(0, 30vh, 0);
-          transform: translate3d(0, 30vh, 0);
+  transform: translate3d(0, 30vh, 0);
 }
-
 .background.up-scroll + .background .content-wrapper {
-  -webkit-transform: translateY(30vh);
-          transform: translateY(30vh);
+  transform: translateY(30vh);
 }
 
 .background.down-scroll {
-  -webkit-transform: translate3d(0, -130vh, 0);
-          transform: translate3d(0, -130vh, 0);
+  transform: translate3d(0, -130vh, 0);
 }
-
 .background.down-scroll .content-wrapper {
-  -webkit-transform: translateY(40vh);
-          transform: translateY(40vh);
+  transform: translateY(40vh);
 }
-
 .background.down-scroll + .background:not(.down-scroll) {
-  -webkit-transform: translate3d(0, -15vh, 0);
-          transform: translate3d(0, -15vh, 0);
+  transform: translate3d(0, -15vh, 0);
 }
-
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
-}
-/*# sourceMappingURL=style.css.map */
+  transform: translateY(15vh);
+}/*# sourceMappingURL=style.css.map */
