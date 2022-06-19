@@ -11,31 +11,26 @@ var swiper = new Swiper('.chargingSwiper', {
 
 $(document).ready(function () {
   function onAnimationText() {
-    if ($('.homeSwiper').find('.swiper-slide-active').hasClass('cars')) {
-      $('#gasoline-car-tab').click(function () {
-        $('#gasoline-car .car-item')
-          .delay(170)
-          .each(function (i) {
-            $(this)
-              .delay(275 * i)
-              .queue(function () {
-                $(this).addClass('show');
-              });
-          });
-      });
-    } else if (
-      $('.homeSwiper').find('.swiper-slide-active').hasClass('battery-deposit')
-    ) {
-      $('#batteryDeposit .battery-deposit-item')
-        .delay(500)
+    $('#gasoline-car-tab').click(function () {
+      $('#gasoline-car .car-item')
+        .delay(170)
         .each(function (i) {
           $(this)
-            .delay(100 * i)
+            .delay(275 * i)
             .queue(function () {
-              $(this).addClass('show-text');
+              $(this).addClass('show');
             });
         });
-    }
+    });
+    $('#batteryDeposit .battery-deposit-item')
+      .delay(500)
+      .each(function (i) {
+        $(this)
+          .delay(100 * i)
+          .queue(function () {
+            $(this).addClass('show-text');
+          });
+      });
   }
 
   var homeSwiper = new Swiper('.homeSwiper', {
