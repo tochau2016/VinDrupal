@@ -12,3 +12,12 @@ var imagesSwiper = new Swiper('.imagesSwiper', {
   slidesPerView: 'auto',
   spaceBetween: 30,
 });
+
+const items = document.querySelectorAll('.global-footprint .global-footprint__wrap .global-footprint__item');
+
+items.forEach( (item)=> {
+  item.addEventListener('click', ()=> {
+      item.parentElement.style.flexDirection = "row-reverse";
+      item.children.src = "../img/VF-91.jpg";
+  })
+});
